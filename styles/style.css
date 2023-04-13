@@ -178,6 +178,8 @@ body {
     background-repeat: no-repeat;
 
 }
+.about-us-item{}
+
 .about-us-item span {
     box-sizing: border-box;
     border: 1px solid #D89595;
@@ -202,7 +204,54 @@ body {
 .about-us-buttons{
     margin-left: 400px;
 }
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-row-gap: 25px;
+    grid-column-gap: 210px;
+    padding: 0 352px;
+}
+.contact{
+    background: #E15252;
+    width: 1200px;
+    height: 648px;
+    margin-left: 352px;
+    margin-top: 50px;
+    border-radius: 0px 0px 50px 50px;
+}
+.contact h2{
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100.5%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contact input{
+    width: 374px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 61px;
 
-.class-huy{
+}
+.contact button{
 
+    box-sizing: border-box;
+    width: 168px;
+    height: 56px;
+    border: 3px solid #FFFFFF;
+    border-radius: 61px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*padding: 50px 96px;*/
+    justify-content: space-around;
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
 }
