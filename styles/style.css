@@ -57,11 +57,11 @@ body {
 }
 
 .title-main {
-    position: relative;
     /*top: 50px;*/
-    left: 352px;
     padding: 50px 0;
+    margin-left: 352px;
 }
+
 
 .title-container {
     position: absolute;
@@ -123,22 +123,23 @@ body {
 
 .services {
     background-image: url("../images/background-top.png");
-    height: 973px;
     background-size: cover;
     background-position: 52%;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-row-gap: 40px;
-    grid-column-gap: 320px;
+    grid-template-columns: repeat(3, 320px);
+    grid-row-gap: 72px;
+    grid-column-gap: 44px;
     padding: 60px 400px;
 }
 
 .service {
+    background-color: #FFFFFF;
     border-radius: 30px;
     box-shadow: 0px 4px 50px rgba(120, 143, 156, 0.25);
     height: fit-content;
     width: fit-content;
+    position: relative;
     /*display: flex;*/
     /*flex-direction: column;*/
 
@@ -151,7 +152,7 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     padding-top: 20px;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
     text-align: center
 }
 
@@ -165,10 +166,10 @@ body {
     color: white;
     font-weight: 700;
     font-size: 14px;
-    /*margin-right: 30px;*/
-    position: relative;
-    margin-left: 71px;
-    margin-top: -48px;
+    position: absolute;
+    left: 70px;
+    bottom: -25px;
+
 }
 .bg-about-us{
     background-image: url("../images/bgbot.png");
@@ -183,9 +184,12 @@ body {
 .about-us-item span {
     box-sizing: border-box;
     border: 1px solid #D89595;
-    border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -196,9 +200,9 @@ body {
 }
 .about-us{
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-row-gap: 40px;
-    grid-column-gap: 320px;
+    grid-template-columns: repeat(3, 330px);
+    grid-row-gap: 42px;
+    grid-column-gap: 50px;
     padding: 60px 400px;
 }
 .about-us-buttons{
@@ -206,9 +210,8 @@ body {
 }
 .gallery{
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-row-gap: 25px;
-    grid-column-gap: 210px;
+    grid-template-columns: repeat(4, 282px);
+    grid-gap: 25px;
     padding: 0 352px;
 }
 .contact{
@@ -217,6 +220,7 @@ body {
     height: 648px;
     margin-left: 352px;
     margin-top: 50px;
+    padding-top: 50px;
     border-radius: 0px 0px 50px 50px;
 }
 .contact h2{
@@ -227,12 +231,15 @@ body {
     line-height: 100.5%;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 92px;
 }
 .contact input{
     width: 374px;
     height: 56px;
     background: #FFFFFF;
     border-radius: 61px;
+    margin-bottom: 14px;
+    border: none;
 
 }
 .contact button{
@@ -254,4 +261,14 @@ body {
 .main-footer{
     display: flex;
     justify-content: center;
+}
+.footer-link{
+    margin-bottom: 35px;
+}
+.footer-link span{
+    margin-left: 22px;
+}
+.info{
+    margin-top: 25px;
+    margin-left: 102px;
 }
