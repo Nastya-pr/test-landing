@@ -329,7 +329,7 @@ body {
     }
     .about-us{
         grid-template-columns: repeat(2, 330px);
-        width: 610px;
+        width: 665px;
     }
     .gallery{
         width: 615px;
