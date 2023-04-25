@@ -64,9 +64,8 @@ body {
 
 
 .title-container {
-    position: absolute;
-    top: 359px;
-    left: 770px;
+    width: 326px;
+    margin: 0 auto;
 
 
 }
@@ -116,21 +115,27 @@ body {
 .logo {
     width: 470px;
     height: 100px;
-    position: absolute;
-    top: 100px;
-    left: 770px;
-}
+    /*position: absolute;*/
+    /*top: 100px;*/
+    /*left: 770px;*/
+    margin: 6% 0% 6% 40%;
 
-.services {
+}
+.service-bg{
     background-image: url("../images/background-top.png");
     background-size: cover;
     background-position: 52%;
     background-repeat: no-repeat;
+    padding: 94px 0;
+}
+.services {
     display: grid;
     grid-template-columns: repeat(3, 320px);
     grid-row-gap: 72px;
     grid-column-gap: 44px;
-    padding: 60px 400px;
+    width: 1048px;
+    margin: 0 auto;
+
 }
 
 .service {
@@ -171,7 +176,8 @@ body {
     bottom: -25px;
 
 }
-.bg-about-us{
+
+.bg-about-us {
     background-image: url("../images/bgbot.png");
     height: 973px;
     background-size: cover;
@@ -179,7 +185,9 @@ body {
     background-repeat: no-repeat;
 
 }
-.about-us-item{}
+
+.about-us-item {
+}
 
 .about-us-item span {
     box-sizing: border-box;
@@ -198,32 +206,47 @@ body {
     text-align: center;
     color: #D89595;
 }
-.about-us{
+
+.about-us {
     display: grid;
     grid-template-columns: repeat(3, 330px);
     grid-row-gap: 42px;
     grid-column-gap: 50px;
-    padding: 60px 400px;
+    padding: 60px 0;
+    width: 1090px;
+    margin: auto;
 }
-.about-us-buttons{
+
+.about-us-buttons {
     margin-left: 400px;
 }
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 282px);
-    grid-gap: 25px;
-    padding: 0 352px;
+
+.gallery {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4, 282px);*/
+    /*grid-gap: 25px;*/
+    /*padding: 0 352px;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 1201px;
+    margin: auto;
+    justify-content: space-around;
 }
-.contact{
+
+.gallery__images {
+    margin-bottom: 20px;
+}
+
+.contact {
     background: #E15252;
-    width: 1200px;
     height: 648px;
-    margin-left: 352px;
-    margin-top: 50px;
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 50px;
     border-radius: 0px 0px 50px 50px;
 }
-.contact h2{
+
+.contact h2 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -233,7 +256,8 @@ body {
     color: #FFFFFF;
     margin-bottom: 92px;
 }
-.contact input{
+
+.contact input {
     width: 374px;
     height: 56px;
     background: #FFFFFF;
@@ -242,33 +266,75 @@ body {
     border: none;
 
 }
-.contact button{
+
+.contact button {
 
     box-sizing: border-box;
     width: 168px;
     height: 56px;
     border: 3px solid #FFFFFF;
     border-radius: 61px;
-  background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     /*padding: 50px 96px;*/
     justify-content: space-around;
 }
-.main-footer{
+
+.main-footer {
     display: flex;
     justify-content: center;
 }
-.footer-link{
+
+.footer-link {
     margin-bottom: 35px;
 }
-.footer-link span{
+
+.footer-link span {
     margin-left: 22px;
 }
-.info{
+
+.info {
     margin-top: 25px;
     margin-left: 102px;
+}
+
+@media (max-width: 1366px) {
+    .logo {
+        width: 370px;
+        height: 75px;
+        margin: 5% 0% 3% 35%;
+    }
+
+    .title-container {
+        width: 326px;
+        margin: 2% 0% 6% 37%;
+    }
+
+    header {
+        height: 625px;
+
+    }
+
+}
+
+@media  (max-width: 1199px) {
+    .services{
+        grid-template-columns: repeat(2, 320px);
+        width: 684px;
+    }
+    .about-us{
+        grid-template-columns: repeat(2, 330px);
+        width: 610px;
+    }
+    .gallery{
+        width: 615px;
+    }
+    .contact{
+        width: 100%;
+    }
 }
